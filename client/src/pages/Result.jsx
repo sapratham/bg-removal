@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
+import { AppContext } from '../context/AppContext'
 
 const Result = () => {
+  const {resultImage , image} = useContext(AppContext)
   return (
     <div>
       <div className='bg-white rounded-lg px-8 py-6 drop-shadow-sm'>
